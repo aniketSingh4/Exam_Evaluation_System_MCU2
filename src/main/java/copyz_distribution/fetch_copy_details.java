@@ -26,7 +26,7 @@ public class fetch_copy_details extends HttpServlet{
         // Set up HTML table formatting for the output 
         out.println("<html><body><header>"); 
         out.println("<h2 class = \" text-center\" style = \"text-align:center;\">Copy Details</h3>"); 
-        out.println("<table border=1 style = background-color:aqua><tr>" + 
+        out.println("<table border=1 style = background-color:#417761><tr>" + 
                  "<td><b>Bundle NO</b></td>" + "<td><b>Paper Code </b></td>" + "<td><b>Paper Name </b></td>"
                 + "<td><b> Total Copy </b></td>" +"</tr>"); 
 

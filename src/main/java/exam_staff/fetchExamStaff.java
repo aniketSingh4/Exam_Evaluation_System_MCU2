@@ -25,7 +25,7 @@ public class fetchExamStaff extends HttpServlet{
         // Set up HTML table formatting for the output 
         out.println("<html><body>"); 
         out.println("<h3>Examinor Information Details</h3>"); 
-        out.println("<table border=1 style = background-color:aqua><tr>" + "<td><b>Unique_ID</b></td>" + "<td><b>Name</b></td>"
+        out.println("<table border=1 style = background-color:#417761><tr>" + "<td><b>Unique_ID</b></td>" + "<td><b>Name</b></td>"
                 + "<td><b>Email</b></td>" + "<td><b>Pan_no </b></td>"
                 + "<td><b> Aadhar_no </b></td>" + "<td><b> Bank Name</b></td>" + "<td><b> Branch </b></td>" +  "<td><b> Account No </b></td>"  + "<td><b> IFSC Code </b></td>" +
                 "<td><b> Qualification </b></td>" +  "<td><b> Experience </b></td>" +  "<td><b> Address </b></td>" +  "<td><b> Mobile No </b></td>" +"</tr>"); 

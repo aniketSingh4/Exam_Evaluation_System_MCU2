@@ -51,7 +51,7 @@ public class Copy_distribute extends HttpServlet {
 			
 			int result = pds.executeUpdate();
 			if(result > 0) {
-				out.println("<h1 class = \"alert alert-primary\" role = \"alert\">Copy Distributed Successfully!</h1>");
+				out.println("alert(\"Data Distribution Successfull.\")");
 			}else {
 				out.println("Error of copy Distribution ");
 			}

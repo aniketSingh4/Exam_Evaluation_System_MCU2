@@ -59,7 +59,7 @@ public class Copy_distribution_UI extends HttpServlet{
   
       out.println("<br><br><label>Bundle NO:- </label>");
       out.println("<input type=\"text\" name = \"bundle_no\" id = \" bundle_no\" placeholder=\" Bundle NO\"><br><br>");
-      out.println("<br><br><label>Examinor ID:- </label>");
+      out.println("<br><br><label>B-Part Examinor ID:- </label>");
       out.println("<input type=\"text\" name = \"unique_id\" id = \" examinor_id\" placeholder=\" Examinor ID\"><br><br>");
       out.println("<label>Date/Time:- </label>");
       out.println("<input type=\"date\" name = \"date\" id = \" date\" placeholder=\" Date \"><br><br>");
