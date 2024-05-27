@@ -50,6 +50,13 @@ public class copyDistribution extends HttpServlet {
 			 number3 = number1 - number2;
 		    }
 			
+           
+		    //Write a query where we update copy count after distribute to examinor for check.
+			PreparedStatement ps1 = conn.prepareStatement("UPDATE copy_details SET Total_copy = '" + Integer.toString(number3) + "'  WHERE bundle_no = '"+bundle_no+"'");
+		    int rs1 = ps1.executeUpdate();
+		    if(rs1 > 0) {
+		    	out.println("Copy Data is updated");
+		    }
 			
 			
 			//set the attribute values
@@ -64,18 +71,12 @@ public class copyDistribution extends HttpServlet {
 			
 			int result = pds.executeUpdate();
 			if(result > 0) {
-				out.println("<h1 class = \"alert alert-primary\" role = \"alert\">Copy Distributed Successfully!</h1>");
+				out.println("<h1>Copy Distributed Successfully!</h1>");
 			}else {
 				out.println("Error of copy Distribution ");
 			}
 			
-			//Write a query where we update copy count after distribute to examinor for check.
 			
-			
-			PreparedStatement ps1 = conn.prepareStatement("UPDATE copy_details SET Total_copy = '" + number3 + "'  WHERE bundle_no = '"+bundle_no+"')");
-		    
-			  
-		    int rs1 = ps1.executeUpdate();
 			
 			
 		}catch(Exception e) {
