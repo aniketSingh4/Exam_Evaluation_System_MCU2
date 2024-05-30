@@ -1,0 +1,3 @@
+Project Discription: This system is developed for exam evaluation system where we have information related examiner, exam-staff, b-part examiner, and copy details and using these information we choose operation for exam evaluation like how many copy we give for checking and their details must be stored into database so when evaluation is completed we calculate total bill for examinor.
+Copy Distribution:In this phase we have total no of copy and we distribute that copy to examiner and after evaluation that copy are transfered to b-part examiner and calculate total marks of copy and write into main page.
+B-Part Copy Distribution: This phase is used after evaluation(checked) of copy and b-part examiner re-evaluate those copy.
